@@ -1,0 +1,92 @@
+/* Color Variables */
+:root {
+  --light-blue: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --dark-blue: hsl(219, 46%, 18%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  max-width: 15rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-container img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.main-container h1 {
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.main-container p {
+  font-size: 0.74rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Footer */
+footer.attribution {
+  font-size: 0.75rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+footer.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 320px) {
+  .main-container {
+    padding: 15px;
+    font-size: 0.875rem;
+  }
+}
